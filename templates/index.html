@@ -1,0 +1,35 @@
+<!--index.html-->
+
+<!--Embed the header.html template at this location-->
+{{ template "header.html" .}}
+
+<div id="doc" class="container-fluid markdown-body" data-hard-breaks="true" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
+
+  <br>
+  <center><h1 style="border-bottom:0px; font-family: 'Roboto', sans-serif; font-weight: 400;"> Andrew Williamson's website </h1></center>
+  <div style="padding-left: 20%; padding-right: 20%;">
+    <div>
+      <br>
+      <center><hr>
+        <p>Hi, my name is Andrew Williamson. Here you will find my writings on all things I find interesting. </p>
+      </center><hr>
+      <br>
+    </div>
+    <div>
+    <!--Loop over the payload variable, which is the list of articles-->
+    {{ range .payload }}
+      <div style="padding-bottom: 1%;">
+        <!--Create the link for the article based on its ID-->
+        <p style="color: rgb(209, 209, 209); line-height: 0px;">{{.Date}}</p>
+        <a style="color: rgb(76, 161, 103); text-decoration: none; font-size: x-large; font-weight: 700;" href="/{{.CID}}">
+          <!--Display the title of the article -->
+          <h3>{{.Title}}</h3>
+        </a>
+      </div>
+    {{end}}
+    </div>
+
+
+
+<!--Embed the footer.html template at this location-->
+{{ template "footer.html" .}}

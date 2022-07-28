@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <!--Use the title variable to set the title of the page-->
+    <title>{{ .title }}</title>
+    <meta charset="UTF-8">
+    <style>
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #282828;
+            color: rgb(255, 255, 255);
+        }
+        .markdown-body table tr {
+            background-color: #1c1c1c;
+        }
+        .markdown-body table tr:nth-child(2n) {
+            background-color: black;
+        }
+    }
+    a {
+        color: rgb(76, 161, 103);
+        text-decoration: none;
+    }
+    </style>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Use bootstrap to make the application look nice-->
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="container">

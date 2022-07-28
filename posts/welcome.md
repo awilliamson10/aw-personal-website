@@ -1,0 +1,20 @@
+# Welcome to my Website
+
+Hello, my name is Andrew Williamson. I'm a software engineer with wide interests across philosophy, distributed systems, biology, and more. My intentions of this website are to provide a place to keep track of the topics and projects I find interesting. I hope you enjoy your stay.
+
+Quite frequently I find myself taken ahold by a new topic or idea, which almost always leads to me spending an inordinate amount of time digging into the details. With a background in research, I have a keen interest in learning things from the very basics. As I climb deeper and deeper to find the base, I'm frequently reminded by that fact the recurision is much more difficult for a brain than a computer. Nonetheless, oftentimes when I finally feel I have a grasp, I can quickly move on to the next topic. 
+
+As exciting as this process has become for me, I tend to return to previous topics and realize I've forgotten much of what I originally learned. That's where this website will come in handy. It will serve as a repository for my knowledge and research of various topics I've encountered. Additionally, I find by collecting my notes and thoughts into a coherent post I will further strengthen my understanding of the topics.
+
+So let's get into some details of how I plan for this to work..
+
+The website itself is pretty simple. It will be a simple blog, with a single page for each post. The posts will be organized by date, and the posts will be sorted by the most recent post first. On the homepage, I will have a list of the most recent posts, and I may eventually get around to adding tags for more organization. 
+
+I tend to write in Markdown and will continue to do so for the foreseeable future, so I've created a simple Golang backend that will render the Markdown into HTML.
+
+Furthermore, I've planned to host each post on The InterPlanetary File System (IPFS). This will allow to me to track the manage the posts in a decentralized manner. I've incorportated the IPFS-API into my backend, so that I can easily fetch all of the posts from the IPFS network using the latest content identifier. You can read more about how IPFS works [here](https://ipfs.io/#how).
+
+Nonetheless, I think this will do the trick for now. If I eventually find things too annoying to deal with, I'll probably switch to a more managed solution. 
+
+Best Regards,
+AW
