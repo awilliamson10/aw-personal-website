@@ -20,6 +20,7 @@ var Index = func(c *gin.Context) {
 			fmt.Println("Error loading .env file")
 		}
 		var LATESTCID = os.Getenv("LATEST_CID")
+		fmt.Println("LATEST CID: " + LATESTCID)
 		posts = GetPosts(LATESTCID)
 		firstLoad = true
 	}
